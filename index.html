@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanda Araújo — Psicóloga</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="logo">
+            <span class="logo-name">Amanda Araújo</span>
+            <span class="logo-crp">Psicóloga · CRP 21/006358</span>
+        </div>
+        <nav id="nav">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#faq">FAQ</a>
+            <a href="#presencial" class="nav-cta">Agendar</a>
+        </nav>
+        <div class="hamburger" id="hamburger" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home">
+        <div class="hero-bg-shape"></div>
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-tag">Psicologia Clínica · Online &amp; Presencial</div>
+                <h1 class="hero-title">
+                    Atendimentos únicos,<br>
+                    <em>planejados</em> para você.
+                </h1>
+                <p class="hero-subtitle">
+                    Um espaço seguro para explorar suas emoções, superar desafios e crescer como pessoa. Atendimentos
+                    online e presenciais com abordagem comportamental.
+                </p>
+                <div class="hero-badges">
+                    <span class="badge">Psicoterapia Adulto</span>
+                    <span class="badge">Psicoterapia Adolescente</span>
+
+                </div>
+                <div class="hero-ctas">
+                    <a href="#sobre" class="btn-primary">
+                        Conheça meu trabalho
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/558681757880" class="btn-secondary" target="_blank" >
+                        Falar no WhatsApp
+                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-photo-wrap">
+                <div class="hero-blob">
+                    <div class="hero-photo-placeholder">
+                        <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5"
+                            viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+                        </svg>
+                        <img src="./img/perfil1.png" alt="foto de perfil da psicologa"
+                        width="130%">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <svg class="hero-wave" viewBox="0 0 1440 80" fill="none" preserveAspectRatio="none">
+            <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#FEFCF9" />
+        </svg>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <div class="container">
+            <div class="sobre-grid" style="padding-top: 1rem;">
+                <div class="sobre-photo-wrap fade-in">
+                    <div class="sobre-deco"></div>
+                    <div class="sobre-deco2"></div>
+                    <div class="sobre-circle">
+                        <div
+                            style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;color:var(--cinza);font-size:0.75rem;text-align:center;padding:2rem;">
+                            <svg width="56" height="56" fill="none" stroke="currentColor" stroke-width="1.2"
+                                viewBox="0 0 24 24" style="opacity:0.4">
+                                <rect x="3" y="3" width="18" height="18" rx="3" />
+                                <path d="M9 13h6M9 9h6M9 17h4" />
+                            </svg>
+                            <img src="./img/perfil2.png" alt="foto da psicologa no escritorio"
+                            width="135%">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sobre-text fade-in">
+                    <div class="section-label">Sobre Mim</div>
+                    <h2 class="section-title">Olá! Meu nome é <em>Amanda</em>.</h2>
+                    <p>Sou psicóloga clínica formada pela faculdade Estácio. Uma psicoterapia voltada ao perceber-se no momento presente — com escuta, consciência e acolhimento. 
+                    
+                    </p>
+                    <p>Atendo adolescentes e adultos de forma presencial em Teresina e online para todo o Brasil.
+                        Acredito em uma relação terapêutica baseada na parceria, no respeito e na escuta ativa — onde
+                        você é o protagonista da sua história.</p>
+                    <p>Meu objetivo é promover consciência para que você possa viver de forma mais integrada, livre e autêntica.
+                    -sem estatisticas. não é apenas aliviar sintomas, mas ajudá-lo(a) a construir habilidades duradouras
+                        para uma vida mais plena e significativa.</p>
+
+                    <a href="#servicos" class="btn-primary">Meus Atendimentos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos">
+        <div class="container">
+            <div class="servicos-intro fade-in">
+                <div class="section-label" style="padding-top: 1rem;">Serviços</div>
+                <h2 class="section-title">Como Posso<br><em>Te Ajudar?</em></h2>
+                <p>Ofereço atendimentos personalizados pensados para as suas necessidades. Cada processo terapêutico é
+                    único, assim como você.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card-servico fade-in">
+                    <div class="card-icon">
+                        <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM6 20v-2a4 4 0 014-4h4a4 4 0 014 4v2" />
+                        </svg>
+                    </div>
+                    <h3>Psicoterapia Adulto</h3>
+                    <p>Atendimento individual para adultos que buscam autoconhecimento, superação de dificuldades
+                        emocionais, ansiedade, depressão e questões interpessoais.</p>
+                    <a href="https://wa.me/558681757880" target="_blank" class="card-link">Saiba mais →</a>
+                </div>
+
+                <div class="card-servico fade-in">
+                    <div class="card-icon">
+                        <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path
+                                d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                        </svg>
+                    </div>
+                    <h3>Psicoterapia Adolescente</h3>
+                    <p>Suporte especializado para adolescentes que enfrentam desafios escolares, familiares, de
+                        identidade e transições importantes da vida.</p>
+                    <a href="https://wa.me/558681757880" target="_blank" class="card-link">Saiba mais →</a>
+                </div>
+
+
+
+                <div class="card-servico fade-in">
+                    <div class="card-icon">
+                        <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                        </svg>
+                    </div>
+                    <h3>Atendimento Online</h3>
+                    <p>Sessões por videoconferência para todo o Brasil, com a mesma qualidade e cuidado do atendimento
+                        presencial, no conforto da sua casa.</p>
+                    <a href="https://wa.me/558681757880" target="_blank" class="card-link">Saiba mais →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <div class="faq-grid">
+                <div class="faq-intro fade-in">
+                    <div class="section-label">FAQ</div>
+                    <h2 class="section-title">Perguntas<br><em>Frequentes</em></h2>
+                    <p>Tenho algumas respostas para as dúvidas mais comuns. Se a sua pergunta não estiver aqui, fique à
+                        vontade para entrar em contato!</p>
+                    <br>
+                    <a href="https://wa.me/558681757880" target="_blank"  class="btn-primary" style="display:inline-flex;">
+                        Tirar uma dúvida
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="faq-list fade-in">
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <button class="faq-q">
+                            <span>Qual é a sua abordagem terapêutica?</span>
+                            <div class="faq-icon">
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M12 5v14M5 12h14" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-a">
+                            <p>Atualmente trabalho com Gestalt-terapia, é uma abordagem psicoterapêutica que foca no aqui e agora, promovendo a consciência das emoções, pensamentos e comportamentos. Ajudando o indivíduo a compreender e transformar padrões para uma vida mais equilibrada.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <button class="faq-q">
+                            <span>Como funciona a primeira sessão?</span>
+                            <div class="faq-icon">
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M12 5v14M5 12h14" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-a">
+                            <p>Consulta inicial de acolhimento, dedicada a compreender profundamente sua demanda e direcionar de forma assertiva as próximas sessões.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <button class="faq-q">
+                            <span>Qual a duração e frequência das sessões?</span>
+                            <div class="faq-icon">
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M12 5v14M5 12h14" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-a">
+                            <p>Sessões de 50 minutos, com frequência semanal ou quinzenal, pensadas para acompanhar você de forma contínua e eficaz.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <button class="faq-q">
+                            <span>O atendimento online é tão eficaz quanto o presencial?</span>
+                            <div class="faq-icon">
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M12 5v14M5 12h14" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-a">
+                            <p>Sim! A psicoterapia online é reconhecida pelo Conselho Federal de Psicologia e apresenta
+                                resultados equivalentes ao atendimento presencial. Muitos pacientes relatam maior
+                                conforto e facilidade de acesso como benefícios adicionais.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <button class="faq-q">
+                            <span>O sigilo é garantido?</span>
+                            <div class="faq-icon">
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M12 5v14M5 12h14" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-a">
+                            <p>Absolutamente. Tudo o que é compartilhado em sessão permanece estritamente 
+                                confidencial, conforme o Código
+                                de Ética do Psicólogo.
+                                “Art. 9º – O psicólogo deve respeitar o sigilo profissional, visando proteger, por meio da confidencialidade, a intimidade das pessoas, grupos ou organizações.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRESENCIAL -->
+    <section id="presencial">
+        <div class="container">
+            <div class="section-label" style="padding-top: 1rem;">Localização e Contato</div>
+            <h2 class="section-title">Atendimentos<br><em>Presenciais</em></h2>
+
+            <div class="presencial-grid">
+                <div class="fade-in">
+                    <div class="map-placeholder">
+                        <div class="map-pin"></div>
+                        <span style="font-size:1.25rem;color:var(--cinza);">Multclinn</span>
+                        <span style="font-size:0.7rem;color:rgba(122,110,104,0.6);"><a href="https://maps.app.goo.gl/4vETtTm1h76RhaTi9" target="_blank" style="text-decoration: none; color:#3292b4;font-size: 0.85rem; ">Veja a localização aqui</a></span>
+                    </div>
+
+                    <div class="endereco">
+                        <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24">
+                            <path
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <div>
+                            <strong>Multclinn</strong>
+                            <p>Centro Empresarial Shopping Rio Poty. Torre I. Sala 1009. R. Mato Grosso, 720<br>Bairro Porenquanto<br>Teresina, PI — CEP 64003-087
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="https://www.instagram.com/psi.amandaaraujo_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="doctoralia-card">
+                        <div class="doc-avatar">
+                        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"
+                            viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                        </div>
+                        <div class="doc-info">
+                            <strong>Amanda Araújo</strong>
+                            <p>Ver perfil no Instagram</p>
+
+                        </div>
+                        <svg width="16" height="16" fill="none" stroke="var(--petrol)" stroke-width="2"
+                            viewBox="0 0 24 24" style="margin-left:auto">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+
+                    <a href="https://wa.me/558681757880" target="_blank" class="agendar-btn">Agendar pelo WhatsApp</a>
+                </div>
+
+                <div class="consultorio-photo fade-in">
+                    <div class="consultorio-deco"></div>
+                    <span
+                        style="font-size:0.78rem;color:var(--cinza);position:relative;z-index:1;text-align:center;padding:0 2rem;"><img src="./img/sala-bonita1.png" width="90%" style="border-radius: 2em; padding: 1em;"  alt=""></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-name">Amanda Araújo</span>
+                    <span class="logo-crp">Psicóloga · CRP 21/006358</span>
+                </div>
+                <p>Um espaço seguro de acolhimento, autoconhecimento e transformação. Atendo online para todo o Brasil e
+                    presencialmente em Teresina, PI.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/psi.amandaaraujo_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link" title="Instagram">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"
+                            viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/558681757880" class="social-link" title="WhatsApp">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <a href="#home">Home</a>
+                <a href="#sobre">Sobre Mim</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#faq">FAQ</a>
+                <a href="#presencial">Contato</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Amanda Araújo Psicóloga · CRP 21/006358 · Todos os direitos reservados</p>
+            <p>Desenvolvido por <a href="#">DevSales-Campelo</a></p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/558681757880" target="_blank" class="whatsapp-float" title="Falar no WhatsApp">
+        <svg width="26" height="26" fill="white" viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
