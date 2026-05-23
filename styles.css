@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html {
@@ -26,6 +27,9 @@ body {
     background: var(--bege);
     color: var(--marrom);
     overflow-x: hidden;
+}
+p{
+    text-align: justify;
 }
 
 /* ── HEADER ── */
@@ -668,7 +672,7 @@ section {
 }
 
 .faq-a.open {
-    max-height: 200px;
+    max-height: 320px;
     padding: 0.6rem 1.3rem 1.3rem;
 }
 
